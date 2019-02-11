@@ -12,10 +12,12 @@ function easy(){
   c_choice =Math.floor((Math.random()*10) + 1);
   num = readline.question("I have my number. Guess a number between 1 and 10: ");
   while (count <=3){
-    if (c_choice===num){
-      console.log("You got it!")
-      return
-    }
+    if (count===1){
+      count +=1
+      if (c_choice===num){
+        console.log("You got it!")
+        return
+    }}
     else if (count ===2) {
       num = readline.question("2 more shots. Guess a number between 1 and 10: ");
       count+=1
@@ -33,22 +35,25 @@ function easy(){
 }}}};
 
 function medium(){
+  count = 1
   c_choice =Math.floor((Math.random()*100) + 1);
-  num = readline.question("I have my number. Guess a number between 1 and 10: ")
+  num = readline.question("I have my number. Guess a number between 1 and 100: ")
   while (count <=3){
-    if (c_choice===num){
-      console.log("You got it!")
-      return
-    }
+    if (count===1){
+      count +=1
+      if (c_choice===num){
+        console.log("You got it!")
+        return
+    }}
     else if (count ===2) {
-      num = readline.question("2 more shots. Guess a number between 1 and 10: ");
+      num = readline.question("2 more shots. Guess a number between 1 and 100: ");
       count+=1
       if (c_choice===num){
         console.log("You got it!")
         return
     }}
     else if (count ===3) {
-      num = readline.question("Last chance. Guess a number between 1 and 10: ");
+      num = readline.question("Last chance. Guess a number between 1 and 100: ");
       count+=1
       if (c_choice===num){
         console.log("You got it!")
@@ -56,13 +61,16 @@ function medium(){
 
 }}}};
 function hard(){
-  c_choice =Math.floor((Math.random()*1000) + 1); 
+  count = 1
+  c_choice =Math.floor((Math.random()*1000) + 1);
   num = readline.question("I have my number. Guess a number between 1 and 1000: ")
   while (count <=3){
-    if (c_choice===num){
-      console.log("You got it!")
-      return
-    }
+    if (count===1){
+      count +=1
+      if (c_choice===num){
+        console.log("You got it!")
+        return
+    }}
     else if (count ===2) {
       num = readline.question("2 more shots. Guess a number between 1 and 1000: ");
       count+=1
