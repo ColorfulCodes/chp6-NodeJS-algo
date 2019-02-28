@@ -1,4 +1,5 @@
-let readline = require('readline-sync');
+const readline = require('readline-sync');
+
 let num;
 let level;
 let c_choice;
