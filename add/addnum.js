@@ -1,3 +1,5 @@
+// Turn to class
+
 let readline = require('readline-sync');
 let total = 0;
 
